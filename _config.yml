@@ -1,0 +1,6 @@
+#jekyll configuration
+name: Koinos Test GHP
+description: Chronicles of my adventure
+url: "https://brklyn8900.github.io/ghp-test/"
+markdown: kramdown
+highlighter: rouge
