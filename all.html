@@ -1,0 +1,27 @@
+---
+layout: default
+title: All
+---
+
+<h2>{{ page.title }}</h2>
+
+
+<table>
+  <thead>
+    <tr>Number</tr>
+    <tr>Title</tr>
+    <tr>Author</tr>
+  </thead>
+  <tbody>
+    {% for item in site.pages %} 
+      {% if item.path contains 'KIP' %}
+        <tr>
+          <td><a href="{{ site.baseurl }}{{ item.url }}"> {{ item.kip }} </a> </td>
+          <td>{{ item.title }}</td>
+          <td>{{ item.author }}</td>
+        </tr>
+      {% endif %}
+   {% endfor %}
+  </tbody>
+</table> 
+
